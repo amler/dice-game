@@ -1,3 +1,5 @@
+import './Die.css';
+
 function Die({ val }) {
   return (
     <div className="Die">
