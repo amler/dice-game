@@ -6,4 +6,7 @@ function getRolls(n) {
   return Array.from({ length: n }, () => d6());
 }
 
-export { d6, getRolls };
+function sum (nums) {
+  return nums.reduce((prev, current) => prev + current, 0);
+}
+export { d6, getRolls, sum };
