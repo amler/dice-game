@@ -1,12 +1,14 @@
-import './App.css'
-import LuckyN from './LuckyN'
+import LuckyN from './LuckyN';
+import { sum } from './utils';
+
+function lessThan4(dice) {
+  return sum(dice) < 4;
+}
 
 function App() {
   return (
     <>
-      <LuckyN/>
-      <LuckyN numDice={4} goal={14}/>
-      
+      <LuckyN winCheck={lessThan4}/>
     </>
   )
 }
