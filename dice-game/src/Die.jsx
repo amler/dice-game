@@ -1,8 +1,8 @@
 import './Die.css';
 
-function Die({ val }) {
+function Die({ val, color = "slateblue"  }) {
   return (
-    <div className="Die">
+    <div className="Die" style={{ backgroundColor: color }}>
       {val}
     </div>
   );
