@@ -1,12 +1,10 @@
 import './App.css'
-import Die from './Die'
+import Dice from './Dice'
 
 function App() {
-
-
   return (
     <>
-      <Die val={2}/>
+      <Dice dice={[3,6,7]}/>
     </>
   )
 }
